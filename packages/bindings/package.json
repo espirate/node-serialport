@@ -20,10 +20,6 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-    "install": "prebuild-install --tag-prefix @serialport/bindings@ || node-gyp rebuild",
-    "lint": "cc --verbose",
-    "prebuild": "prebuild --all --force --strip --verbose --tag-prefix @serialport/bindings@",
-    "rebuild": "node-gyp rebuild"
   },
   "publishConfig": {
     "access": "public"
@@ -31,18 +27,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/node-serialport/node-serialport.git"
-  },
-  "gypfile": true,
-  "cc": {
-    "filter": [
-      "legal/copyright",
-      "build/include"
-    ],
-    "files": [
-      "src/*.cpp",
-      "src/*.h"
-    ],
-    "linelength": "120"
+    "url": "git://github.com/espirate/node-serialport.git"
   }
 }

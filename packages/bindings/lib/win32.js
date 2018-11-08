@@ -1,4 +1,5 @@
-const binding = require('bindings')('bindings.node')
+//const binding = require('bindings')('bindings.node')
+const binding=require("./bin/index");
 const AbstractBinding = require('@serialport/binding-abstract')
 const promisify = require('./util').promisify
 const serialNumParser = require('./win32-sn-parser')
